@@ -134,7 +134,7 @@
 		-webkit-animation:p1_lantern 1s infinite alternate;
 		animation:p1_lantern 1s infinite alternate;
 	}
-	@keyframes p1_lantern{
+	@-webkit-keyframes p1_lantern{
 		0%{
 			opacity: 0.5;
 			-webkit-transform: scale(0.8,0.8);
@@ -142,7 +142,7 @@
 		}
 		100%{opacity: 1;}
 	}
-	@-webkit-keyframes p1_lantern{
+	@keyframes p1_lantern{
 		0%{
 			opacity: 0.5;
 			-webkit-transform: scale(0.8,0.8);
@@ -166,7 +166,7 @@
 		position: absolute;
 		left: 0;
 		right: 0;
-		bottom: 48px;
+		bottom: 30px;
 		text-align: center;
 		color: #231815;
 		z-index:1;
