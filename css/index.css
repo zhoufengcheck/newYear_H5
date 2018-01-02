@@ -114,7 +114,7 @@
 		top: 0;
 		left: 0
 	}
-	#page1>.p1_lantern::after{
+	#page1>.p1_lantern:after{
 		display: block;
 		z-index: -1;
 		content: "";
