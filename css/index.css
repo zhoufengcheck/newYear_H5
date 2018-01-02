@@ -93,7 +93,7 @@
 		z-index: 0;
 		position: absolute;
 		color: #fff;
-		height: 71.2vh;
+		height: 127.761vw;
 		width: 45vw;
 		top:-3.4%;
 		left: 0;
@@ -101,22 +101,30 @@
 		margin: auto;
 		text-align: center;
 		font-size: 3.506rem;
-		background: url("../images/p1_lantern.png") no-repeat center bottom;
+		/* background: url("../images/p1_lantern.png") no-repeat center bottom; */
 		padding-top: 30vh;	
 		background-size: 100%;
 		-webkit-box-sizing:border-box;
 		        box-sizing:border-box
 	}
-	#page1>.p1_lantern:before{
+	#page1>.p1_lantern>img{
+		position: absolute;
+		display: block;
+		width: 45vw;
+		top: 0;
+		left: 0
+	}
+	#page1>.p1_lantern::after{
+		display: block;
 		z-index: -1;
 		content: "";
 		position: absolute;
 		width: 30vw;
 		height: 30vw;
-		left: 0;
-		top:0;
+		top:44.47vw;
 		right: 0;
-		bottom: 0;
+		left: 0;
+		/* bottom: 0; */
 		margin: auto;
 		background: #d60b3b;
 		opacity: 0.5;
@@ -319,7 +327,7 @@
 		position: absolute;
 		width: 34.68vw;
 		height: 6.32vh;
-		top:7.82vh;
+		top:6vh;
 		left: 0;
 		right: 0;
 		margin: auto;
@@ -329,12 +337,12 @@
 	#page3>.p3_title{
 		position: absolute;
 		width: 48.12vw;
-		height: 50vh;
-		top:21vh;
+		/* height: 50vh; */
+		top:18vh;
 		left: 0;
 		right: 0;
 		margin: auto;
-		background: url("../images/p3_title.png") no-repeat center center;
+		/* background: url("../images/p3_title.png") no-repeat center center; */
 		background-size: 100%;
 	}
 	#page3>.p3_first{
@@ -359,7 +367,7 @@
 		position: absolute;
 		width: 32vw;
 		height: 32vw;
-		bottom:10vh;
+		bottom:5vh;
 		left: 0;
 		right: 0;
 		margin: auto;
