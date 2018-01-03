@@ -1,0 +1,43 @@
+该项目是做一个小的H5页面，贺新春
+https://zhoufengcheck.github.io/newYear_H5/
+总结学习的几个知识点
+css的比较多，js的没啥
+
+1：移动端开发，添加metal.控制一些配置
+    //浏览器内核配置
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">  
+    //视口，宽度和设备是一样的，不能缩放
+    <meta name="viewport" content="width=device-width, inital-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    //可将telephone=no，则手机号码不被显示为拨号链接
+    <meta name="format-detection" content="telephone=no">
+2：本demo中，作者将图片作为div的背景代替图片的插入，其实我也不知道为啥，看网上的介绍是这样的
+
+    1.写在css里面的图片是以背景图形式存在的，而写在html里的img是以标签形式存在的，
+        在网页加载的过程中，以css背景图存在的图片会等到结构加载完成（网页的内容全部显示以后）才开始加载，而html里的img标签是网页结构（内容）的一部分会在加载结构的过程中加载。
+    2.通常是非内容的图片就写在css里面(用来修饰页面的元素)，如果是内容性的图片就写在html里面，
+        打个比方，你要做一个有漂亮边框的相册。那么修饰边框的图片就写在css里面，相框里面的内容照片就写在html里面。
+    3.图片做为背景，在图片没加载的时候或者加载失败的时候，不会有个图片的占位标记，不会出现红叉。
+
+    但后来实际操作中发现，图片背景还是有很大隐患，手机端的尺寸不一样，比如宽是4vw高的4vh,比例是1:2，
+    但换一个手机，比例就不一样了，图片做背景，显示不完全。所以，我后来还是把有的图片换成了img.
+
+3：vw和vh,感觉这个还是挺好用的。算是新知识吧
+    vw (viewport width) vh (viewport height) 是视窗的大小，100vw = 100%视窗宽度 
+    100vh = 100%视窗高度，用vw，vh设定的大小只和视窗大小有关。
+
+4：多年不用的animation
+    可以去文档里面看看，这里就不记录了http://www.w3school.com.cn/cssref/pr_animation.asp
+    像什么轮流反向播放动画，动画应该播放的次数，可以看看，文档写的很清楚
+
+5：兼容性，css3的属性都加上兼容性。
+    比如-webkit-animation:music_disc 4s linear infinite;
+		animation:music_disc 4s linear infinite;
+
+6：audio的一些东西，看文档吧 
+    HTML5 视频和音频的 DOM 参考手册 http://www.w3school.com.cn/tags/html_ref_audio_video_dom.asp
+    HTML 5 <audio> 标签 http://www.w3school.com.cn/html5/html5_audio.asp
+
+
+
+
+
